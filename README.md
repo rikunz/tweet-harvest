@@ -15,3 +15,13 @@ To use Tweet Harvest, follow these simple steps:
 That’s it! Tweet Harvest will open a Chromium browser instance and navigate to Twitter's search page. It will then enter your search parameters and scrape the resulting tweets. The tweets will be saved in a CSV file in a directory named tweets-data in the current working directory.
 
 Note: You will need a Twitter auth token to use this tool. When prompted, enter your Twitter auth token to authenticate your search.
+
+## Python Version
+
+This repository now includes a Python implementation of Tweet Harvest using Playwright. You can run it with:
+
+```bash
+python -m pyharvest.cli --token YOUR_TOKEN --search-keyword "some text" --limit 100
+```
+
+The script follows the same flow as the original Node.js version and stores tweets in the `tweets-data` directory.
